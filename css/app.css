@@ -1596,6 +1596,11 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.px-\[25px\] {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -2825,6 +2830,10 @@ article > *:not(.entry-content),
     gap: 60px;
   }
 
+  .xl\:gap-\[30px\] {
+    gap: 30px;
+  }
+
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -2833,6 +2842,16 @@ article > *:not(.entry-content),
   .xl\:px-\[120px\] {
     padding-left: 120px;
     padding-right: 120px;
+  }
+
+  .xl\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .xl\:py-\[60px\] {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .xl\:pr-8 {

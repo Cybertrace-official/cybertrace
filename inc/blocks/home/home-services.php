@@ -11,18 +11,18 @@
             </p>
         </div>
 
-        <div class="home__services relative gap-[20px] grid md:grid-flow-row md:grid-cols-2 md:grid-row-6 lg:grid-cols-3 lg:grid-row-4 xl:gap-[60px]">
+        <div class="home__services relative gap-[20px] grid md:grid-flow-row md:grid-cols-2 md:grid-row-6 lg:grid-cols-3 lg:grid-row-4 xl:gap-[30px]">
 
             <?php if ( have_rows( 'services_box' ) ) : ?>
                 <?php while( have_rows( 'services_box' ) ) : the_row(); ?>
 
-                <div class="bg-white px-5 py-7 lg:px-10 lg:py-[60px] shadow-lg border rounded-lg w-full mb-5 md:mb-0">
+                <div class="bg-white px-[25px] py-7 xl:px-10 xl:py-[60px] shadow-lg border rounded-lg w-full mb-5 md:mb-0">
 
-                        <h3 class="text-[#324162] text-xl md:text-[28px] md:leading-8 font-bold font-roboto">
+                        <h3 class="text-[#324162] text-xl md:text-[22px] md:leading-8 font-bold font-roboto">
                             <?php the_sub_field( 'heading' ); ?>
                         </h3>
 
-                        <h4 class="text-cadetGray text-xl font-bold font-roboto mt-3 mb-4">
+                        <h4 class="text-cadetGray text-lg font-bold font-roboto mt-3 mb-4">
                             <?php the_sub_field( 'sub_heading' ); ?>
                         </h4>
 
@@ -36,7 +36,7 @@
 
                             <?php if( $reading_more_button ) : ?>
 
-                                <a href="<?php echo esc_url( $reading_more_button['url'] ) ?>" aria-label="Read more" target="_self" class="text-2xl font-roboto leading-[26px] font-medium capitalize text-gold">
+                                <a href="<?php echo esc_url( $reading_more_button['url'] ) ?>" aria-label="Read more" target="_self" class="text-lg font-roboto leading-[26px] font-medium capitalize text-gold">
 
                                 <?php echo esc_html( $reading_more_button['title'] ); ?>
 
