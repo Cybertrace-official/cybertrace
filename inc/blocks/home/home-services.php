@@ -1,6 +1,6 @@
-<section class="px-[15px] py-[100px] xl:px-0">
-    <div class="max-w-[1920px] px-5 xl:px-[120px] mx-auto">
-        <div class="os-head">
+<section class="bg-whiteSmoke py-[100px]">
+    <div class="hm-container max-w-[1920px] px-5 xl:px-[120px] mx-auto">
+        <div class="os-head mb-[80px]">
             <div class="flex justify-center items-center">
                 <hr class="w-10 h-1 mr-[4px] bg-gold md:mr-7">
                 <h2 class="font-roboto text-[40px] leading-[48px] lg:text-5xl text-center font-bold xl:leading-7"><?php the_field( 'hs_heading' ); ?></h2>
@@ -11,24 +11,24 @@
             </p>
         </div>
 
-        <div class="services-inner relative gap-5 grid md:grid-flow-row md:grid-cols-2 md:grid-row-6 lg:grid-cols-3 lg:grid-row-4">
+        <div class="home__services relative gap-[20px] grid md:grid-flow-row md:grid-cols-2 md:grid-row-6 lg:grid-cols-3 lg:grid-row-4 xl:gap-[60px]">
 
             <?php if ( have_rows( 'services_box' ) ) : ?>
                 <?php while( have_rows( 'services_box' ) ) : the_row(); ?>
 
-                <div class="bg-black px-25px py-10 shadow-lg border rounded-lg w-full mb-5 md:mb-0">
+                <div class="bg-white px-5 py-7 lg:px-10 lg:py-[60px] shadow-lg border rounded-lg w-full mb-5 md:mb-0">
 
-                        <h3 class="text-white text-xl font-semibold font-roboto">
+                        <h3 class="text-[#324162] text-xl md:text-[28px] md:leading-8 font-bold font-roboto">
                             <?php the_sub_field( 'heading' ); ?>
                         </h3>
 
-                        <h4 class="text-golden text-base md:text-sm font-semibold font-roboto py-5">
+                        <h4 class="text-cadetGray text-xl font-bold font-roboto mt-3 mb-4">
                             <?php the_sub_field( 'sub_heading' ); ?>
                         </h4>
 
-                        <p class="text-white text-base font-normal font-nunito mb-11">
+                        <div class="hs__content text-[#324162] lg:min-h-[240px] mb-11">
                             <?php the_sub_field( 'description' ); ?>
-                        </p>
+                        </div>
 
                         <div>
 
@@ -36,7 +36,7 @@
 
                             <?php if( $reading_more_button ) : ?>
 
-                                <a href="<?php echo esc_url( $reading_more_button['url'] ) ?>" aria-label="Read more" target="_self" class="text-base font-roboto font-medium uppercase text-white">
+                                <a href="<?php echo esc_url( $reading_more_button['url'] ) ?>" aria-label="Read more" target="_self" class="text-2xl font-roboto leading-[26px] font-medium capitalize text-gold">
 
                                 <?php echo esc_html( $reading_more_button['title'] ); ?>
 

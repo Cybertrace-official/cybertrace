@@ -20,6 +20,13 @@ p {
     margin-bottom: 16px;
     overflow-wrap: break-word;
 }
+.hs__content > p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 h1,
 h2,

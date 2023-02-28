@@ -1,6 +1,6 @@
 
 
-<section class="scam_detector bg-black px-[15px] pt-[80px] pb-[77px] xl:px-0" style="background-image: url( 'https://www.cybertrace.com.au/wp-content/uploads/2023/02/freeScamDetector.png' ); background-size:cover; background-repeat:no-repeat;">
+<section class="scam_detector mt-[60px] bg-black px-[15px] pt-[80px] pb-[77px] xl:px-0" style="background-image: url( 'https://www.cybertrace.com.au/wp-content/uploads/2023/02/freeScamDetector.png' ); background-size:cover; background-repeat:no-repeat;">
     <div class="max-w-[1920px] px-5 xl:px-[120px] mx-auto">
         <div class="form__wrapper text-center">
             <h2 class="text-[35px] md:text-[42px] lg:text-[48px] text-white font-roboto2 leading-[60px] font-bold">

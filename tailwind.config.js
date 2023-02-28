@@ -28,7 +28,8 @@ module.exports = {
                 'darkGold' : '#B77319',
                 'golden'   : '#b8894b',
                 'gold'     : '#BA8C49',
-                'darkPink'   : '#CC2E72'
+                'darkPink'   : '#CC2E72',
+                'whiteSmoke' : '#F5F5F5'
               },
               
               gradientColorStops: {

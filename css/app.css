@@ -842,6 +842,26 @@ video {
   margin-top: 6rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-\[80px\] {
+  margin-bottom: 80px;
+}
+
+.mb-\[14px\] {
+  margin-bottom: 14px;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
+}
+
 .block {
   display: block;
 }
@@ -1158,6 +1178,22 @@ video {
   gap: 1.75rem;
 }
 
+.gap-\[60px\] {
+  gap: 60px;
+}
+
+.gap-\[40px\] {
+  gap: 40px;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1348,6 +1384,11 @@ video {
 .bg-darkPink {
   --tw-bg-opacity: 1;
   background-color: rgb(204 46 114 / var(--tw-bg-opacity));
+}
+
+.bg-whiteSmoke {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1543,6 +1584,16 @@ video {
 .py-\[100px\] {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .pt-16 {
@@ -1927,6 +1978,11 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-\[\#324162\] {
+  --tw-text-opacity: 1;
+  color: rgb(50 65 98 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2534,6 +2590,10 @@ article > *:not(.entry-content),
     font-size: 42px;
   }
 
+  .md\:text-\[28px\] {
+    font-size: 28px;
+  }
+
   .md\:leading-50px {
     line-height: 50px;
   }
@@ -2548,6 +2608,10 @@ article > *:not(.entry-content),
 
   .md\:leading-\[28px\] {
     line-height: 28px;
+  }
+
+  .md\:leading-8 {
+    line-height: 2rem;
   }
 }
 
@@ -2582,6 +2646,10 @@ article > *:not(.entry-content),
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:min-h-\[240px\] {
+    min-height: 240px;
   }
 
   .lg\:w-full {
@@ -2644,6 +2712,16 @@ article > *:not(.entry-content),
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:py-\[60px\] {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .lg\:pr-0 {
@@ -2741,6 +2819,10 @@ article > *:not(.entry-content),
 
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:gap-\[60px\] {
+    gap: 60px;
   }
 
   .xl\:px-0 {

@@ -66,7 +66,7 @@ function tailpress_enqueue_scripts()
 	$theme = wp_get_theme();
 
 	$scripts_version = $unique;
-	$scripts_version = '1.0.61';
+	$scripts_version = '1.0.67';
 	//$theme->get( 'Version' )
 	wp_enqueue_style('tailpress', tailpress_asset('css/app.css'), array(), $scripts_version);
 
