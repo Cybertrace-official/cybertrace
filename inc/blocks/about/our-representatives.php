@@ -22,11 +22,11 @@
                 </div>
            
                 <div class="md:ml-8">
-                    <h3 class="text-xl lg:text-3xl font-semibold text-golden font-roboto mb-2 mt-8 md:mt-0"><?php echo $or_name;?></h3>
+                    <h3 class="text-xl lg:text-3xl font-semibold text-gold font-roboto mb-2 mt-8 md:mt-0"><?php echo $or_name;?></h3>
                     <h4 class="text-base lg:text-xl font-medium text-white font-nunito"><?php echo $or_designation;?></h4>
                 </div>
 
-                <div class="dan-description shadow absolute left-0 -top-[498px] bg-golden p-4 md:p-45px rounded-2xl z-30">
+                <div class="dan-description shadow absolute left-0 -top-[498px] bg-gold p-4 md:p-45px rounded-2xl z-30">
 					<div class="text-white text-base font-nunito">
 						<?php echo $or_about_information;?>
 					</div>

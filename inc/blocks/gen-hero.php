@@ -24,7 +24,7 @@ if ($hide_title === true) {
         <?php $gen_hero_description = get_field('gen_hero_description'); ?>
 
         <?php if ($gen_hero_description) : ?>
-            <p class="text-xl mt-4 text-black max-w-[800px] mx-auto font-nunito"><?php the_field('gen_hero_description'); ?></p>
+            <p class="text-xl mt-4 text-black max-w-[800px] mx-auto font-roboto"><?php the_field('gen_hero_description'); ?></p>
         <?php endif; ?>
 
     </div>

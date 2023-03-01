@@ -1,6 +1,6 @@
 /*
     Theme Name: Cybertrace
-    Author: Muhammad Nabeel
+    Author: Webzeto
     Author URI: 
     Description: 
     Version: 1.0.0
@@ -20,13 +20,13 @@ p {
     margin-bottom: 16px;
     overflow-wrap: break-word;
 }
-.hs__content > p {
+
+.hs__content>p {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
     font-family: 'Roboto', sans-serif;
 }
-
 
 h1,
 h2,
@@ -190,6 +190,7 @@ svg {
 }
 
 /* Header Toggle */
+
 .toggle>span {
     width: 25px;
     height: 2px;
@@ -251,6 +252,15 @@ svg {
 
 .cf-tracing p {
     color: #fff;
+}
+
+/* Home Services */
+.ss__box {
+    position: relative;
+}
+.ss__box .lm__button {
+    position: absolute;
+    bottom: 34px;
 }
 
 /* sanction_data */

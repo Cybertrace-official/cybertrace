@@ -1,4 +1,4 @@
-<section class="relative bg-golden mr-4 ml-4 max-w-1140px px-5 pt-8 pb-12 text-center md:text-left xl:mx-auto md:p-12 rounded-2xl -mb-[165px] z-50 mt-5">
+<section class="relative bg-golden mr-4 ml-4 max-w-1140px px-5 pt-8 pb-12 text-center md:text-left xl:mx-auto md:p-12 rounded-2xl -mb-[165px] z-50">
 
 		<div class="cta-inner md:flex md:justify-between md:items-center">
 			<div class="relative z-10 md:max-w-sm lg:w-full">

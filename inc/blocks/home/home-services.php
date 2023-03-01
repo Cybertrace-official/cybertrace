@@ -16,35 +16,35 @@
             <?php if ( have_rows( 'services_box' ) ) : ?>
                 <?php while( have_rows( 'services_box' ) ) : the_row(); ?>
 
-                <div class="bg-white px-[25px] py-7 xl:px-10 xl:py-[60px] shadow-lg border rounded-lg w-full mb-5 md:mb-0">
+                <div class="ss__box bg-white relative px-[25px] py-7 xl:px-10 xl:py-[60px] shadow-lg border rounded-lg w-full mb-5 md:mb-0">
 
-                        <h3 class="text-[#324162] text-xl md:text-[22px] md:leading-8 font-bold font-roboto">
-                            <?php the_sub_field( 'heading' ); ?>
-                        </h3>
+                    <h3 class="text-[#324162] text-xl md:text-[22px] md:leading-8 font-bold font-roboto">
+                        <?php the_sub_field( 'heading' ); ?>
+                    </h3>
 
-                        <h4 class="text-cadetGray text-lg font-bold font-roboto mt-3 mb-4">
-                            <?php the_sub_field( 'sub_heading' ); ?>
-                        </h4>
+                    <h4 class="text-cadetGray text-base font-bold font-roboto mt-3 mb-4">
+                        <?php the_sub_field( 'sub_heading' ); ?>
+                    </h4>
 
-                        <div class="hs__content text-[#324162] lg:min-h-[240px] mb-11">
-                            <?php the_sub_field( 'description' ); ?>
-                        </div>
+                    <div class="hs__content text-[#324162] mb-11">
+                        <?php the_sub_field( 'description' ); ?>
+                    </div>
 
-                        <div>
+                    <div class="lm__button flex items-center">
+                        <?php $reading_more_button = get_sub_field( 'reading_more_button' ) ?>
 
-                            <?php $reading_more_button = get_sub_field( 'reading_more_button' ) ?>
-
-                            <?php if( $reading_more_button ) : ?>
-
-                                <a href="<?php echo esc_url( $reading_more_button['url'] ) ?>" aria-label="Read more" target="_self" class="text-lg font-roboto leading-[26px] font-medium capitalize text-gold">
-
+                        <?php if( $reading_more_button ) : ?>
+                            <a href="<?php echo esc_url( $reading_more_button['url'] ) ?>" aria-label="Read more" target="_self" class="text-lg font-roboto leading-[26px] font-medium capitalize text-[#BA8C49]">
                                 <?php echo esc_html( $reading_more_button['title'] ); ?>
+                            </a>
+                        <?php endif; ?>
 
-                                </a>
-
-                            <?php endif; ?>
-
-                        </div>
+                        <span class="ml-4">                        
+                            <svg width="26" height="16" viewBox="0 0 26 16" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#BA8C49" d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"/>
+                            </svg>
+                        </span>
+                    </div>
 
                 </div>
 

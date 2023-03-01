@@ -15,7 +15,7 @@ module.exports = {
             textColor: {
                 'golden'   : '#b8894b',
                 'cadetGray' : '#96A9BB',
-                'gold'      : '#deb12b',
+                'gold'      : '#BA8C4A',
                 'darkGray'   : '#3B3B3B',
                 'darkBlue'    : '#4774C2',
                 'lightGray'   : '#9A9A9A',

@@ -66,7 +66,7 @@ function tailpress_enqueue_scripts()
 	$theme = wp_get_theme();
 
 	$scripts_version = $unique;
-	$scripts_version = '1.0.68';
+	$scripts_version = '1.0.70';
 	//$theme->get( 'Version' )
 	wp_enqueue_style('tailpress', tailpress_asset('css/app.css'), array(), $scripts_version);
 
@@ -630,3 +630,62 @@ function mytheme_comment($comment, $args, $depth)
 		}
 	}
 	add_action('wp_head', 'preload_post_images', 1);
+
+
+	add_action('wpforms_process_complete', 'faraz_wpforms_process_complete_function', 10, 4);
+
+	function faraz_wpforms_process_complete_function($fields, $entry, $form_data, $entry_id)
+	{
+		$form_id = $form_data['id'];
+		$field_values = array();
+
+		if (!in_array($form_id, array(16818))) {
+			return;
+		}
+		if ($form_id == '16818') {
+			foreach ($fields as $fld) {
+				$field_values[$fld['name']] = $fld['value'];
+			}
+
+			$scam_details = array(
+				'Type of Scam' => $field_values['Type of Scam'],
+				'Method of Contact' => $field_values['Method of Contact'],
+				'Message' => $field_values['Message'],
+			);
+			faraz_store_reported_phone_number_to_scam_phone_number_db(
+				$field_values['Scam Phone Number'],
+				$scam_details
+			);
+		}
+	}
+
+	function faraz_store_reported_phone_number_to_scam_phone_number_db($phone_number, $details)
+	{
+		$details = json_encode($details);
+		$url = 'https://db-scam-phone-numbers.cybertrace.com.au/api/scam-reports';
+
+		// Set the request body parameters
+		$body = array(
+			'phone_number' => $phone_number,
+			'details' => $details
+		);
+
+		// Send the POST request
+		$response = wp_remote_post($url, array(
+			'method' => 'POST',
+			'headers' => array(),
+			'body' => $body,
+		));
+
+		// Check for errors and handle the response
+		if (is_wp_error($response)) {
+			$error_message = $response->get_error_message();
+			// echo "Something went wrong: $error_message";
+		} else {
+			$response_body = wp_remote_retrieve_body($response);
+			// echo "Response: $response_body";
+		}
+
+		// var_dump(json_encode($details));
+		// die;
+	}

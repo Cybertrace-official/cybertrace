@@ -5,11 +5,7 @@
         <h2 class="font-roboto text-[40px] leading-[48px] lg:text-5xl text-center font-bold xl:leading-7"><?php the_field( 'home_media_heading' ); ?></h2>
         <hr class="w-10 h-1 ml-[4px] bg-gold md:ml-7">
     </div>
-
-    <p class= "text-cadetGray font-roboto text-xl leading-9 md:text-[22px] font-normal text-center max-w-[980px] mx-auto mt-[55px]">
-        Our expertise in cyber crime investigation has been recognized by top industry publications, highlighting our commitment to solving digital crime.
-    </p>
-    
+    <p class= "text-cadetGray font-roboto text-xl leading-9 md:text-[22px] font-normal text-center max-w-[980px] mx-auto mt-[55px]">Our expertise in cyber crime investigation has been recognized by top industry publications, highlighting our commitment to solving digital crime.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-rows-1 gap-7 mt-10">
 
     <?php if ( have_rows( 'home_media_box' ) ) : ?>
